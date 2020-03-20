@@ -279,3 +279,43 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .subscribe {
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  padding: 10% 0;
+}
+.home .subscribe h2 {
+  margin-bottom: 10%;
+}
+.home .subscribe form {
+  margin-bottom: 10%;
+}
+.home .subscribe form input {
+  height: 30px;
+  width: 30%;
+}
+.home .subscribe form label {
+  color: #454A59;
+  margin: 0 2%;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.home .subscribe .btn {
+  display: flex;
+  background-color: #23293B;
+  cursor: pointer;
+  width: 30%;
+  height: 35px;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.home .subscribe .btn:hover {
+  background-color: white;
+  color: #23293B;
+  border: 1px solid #23293B;
+  transition: 0.5s;
+}
