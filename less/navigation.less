@@ -7,8 +7,7 @@ nav{
     flex-direction: column-reverse;
     align-items: center;
     padding: 1% 0;
-    max-width: 1300px;
-    width: 100%;
+    width: 95%;
     margin: 0 auto; 
     margin-top: 1%;
     background-color:@nav-bg ;
@@ -21,8 +20,15 @@ nav{
     width: 45%;
     margin-top: 2%;
 
+    @media @phone{
+        width: 100%;
+        margin-top: 4%;
+    }
 
-}
+    }
+
+
+
     
        
     a{
@@ -31,10 +37,15 @@ nav{
         margin: 0 2%;
         font-size: 1.8rem;
         font-weight: 600;
+
+        @media @phone{
+           font-size: 1.5rem;
+          }
     }
 
 
 }
+
 
 
 
