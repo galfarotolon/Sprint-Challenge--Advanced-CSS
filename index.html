@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>SpaceWalkers</title>
 
@@ -15,6 +16,27 @@
 </head>
 
 <body>
+
+  <nav>
+    <div class="links">
+  <a href="">Home</a>
+  <a href="">About Us</a>
+  <a href="">Blog</a>
+  <a href="">Contact</a>
+  <a href="">Sign In</a>
+  <a href="">Sign Up</a>
+  
+  
+  </div>
+  
+  <div class="mainHeader">
+  <h1>SpaceWalkers</h1>
+  </div>
+</nav>
+    <div class="header">
+  <img src="img/main-header.png" alt="Spacewalkers main header image">
+</div>  
+
 
  <!-- navigation code here -->
 
@@ -61,6 +83,22 @@
       </div>
 
     </section>
+
+    <section class="subscribe">
+      <h2>Newsletter Signup</h2>
+        <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+          <label for="name">Your Name:</label>
+          <input type="name" name="name" autocomplete="off" placeholder="Firstname Lastname">
+          <label for="email">Your Email:</label>
+          <input type="email" name="email" autocomplete="off" placeholder="123@example.com">
+       
+      
+
+        </form>
+
+        <button class="btn" type="submit">Subscribe</button>
+    </section>
+    
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>

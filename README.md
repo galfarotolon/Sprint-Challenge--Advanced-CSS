@@ -32,15 +32,39 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1.	What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+Adaptive websites adapt to the width of the browser at specific breakpoints (6 is usually the industry standard), so has more of a broken feel or snappy when moving from breakpoint to breakpoint (when maximizing or minimizing browser with the mouse for example). These breakpoints are usually static in nature and change suddenly when reaching the next breakpoint. 
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Responsive websites on the other hand respond to the size of the browser at any given point. These sites are normally made with percentages, so even before reaching the next breakpoint they are being responsive. No matter what the browser width may be, the site adjusts its layout and even functionality to best fit the screen.
 
-4. How would you describe preprocessing to someone new to CSS?
+2.	Describe what it means to be mobile first vs desktop first.
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+When a site is being made with mobile first in mind, all the CSS is structured and laid out with the small phone screen sizes in mind. That is, the natural CSS of the site is made for small resolution screens. Then the media query breakpoints would have to be (min-width) in order to adjust to bigger sizes, being tablet or desktop. 
+
+When developing desktop first websites, the natural CSS of the website is made with bigger screens in mind, and so is the layout. Then it is the developer’s job to scale it down using (max-width) media query breakpoints. 
+
+3.	What does font-size: 62.5% in the html tag do for us when using rem units?
+
+Rem units are relative in size to the root element. The standard browser renders text at 16px in size, so that normally would equal to 1rem. By adjusting font-size in the html tag to 62.5%, this number transforms the usual 16px to 10px. This way converting other text (like headers or other sections) becomes easier and less math is involved. This way 2 rem is 20px and not 32px, and so on. 
+
+4.	How would you describe preprocessing to someone new to CSS?
+
+While preprocessing may seem a bit complicated at first, especially for someone who has just seen vanilla CSS, I would say that with more practice it becomes the better option. Preprocessing is useful in the long run because DRY (don’t repeat yourself) code is involved, there is much less repetition and mixins and variables are a way to do so. 
+
+Mixins are like creating a class with code you use multiple times, and you call it inside another class by simply using () parentheses at the end. This way many lines of code can be done in one. Similarly, variables are used to substitute certain values across the document only one time. If the variable is used in 20 or 30 occasions, one can go to where the variable is declared and change its property only once and it will affect the others. 
+
+Parametric mixins use variables as parameters to change properties as needed. One main mixin can have 10 properties, while 7 are non-changing but 3 of them can vary depending on where they are used, for example an element can be justified center in one section but needs to be flex-end in another. This can be done by including this property instead of the default variable. 
+
+Escaping is the same as a variable but affects media queries, so if one has to change the breakpoint from 500px to 540px, it has to be changed only once.
+Preprocessing is a good way to ensure less human error by having to change things around only once where they are declared, instead of across the whole document.
+
+5.	What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is nesting.  It makes it easier to see which elements are inside others and makes more sense in the cascading nature of CSS. I also enjoy variables, since changing one (example main-theme-color) affects the others without having to scroll through the code manually and replacing it several times. 
+
+The concept that gives me most trouble is parametric mixins, I still haven’t totally grasped the structure of the mixin and it gets me confused at times. I will study hard to totally master this concept. 
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

@@ -1,8 +1,31 @@
 // Home Content
+.header{
+
+.displayFlexCenter();
+.marginCenter();
+
+img{
+  border-radius: 5px;
+  width: 100%;
+
+
+}
+
+@media @phone{
+  max-width: 95%;
+}
+}
+
+
 
 .home {
 
+
+
   .intro {
+    @media @phone{
+      width: 100%;
+    }
 
     h2 {
       padding: 15px;
@@ -10,6 +33,8 @@
 
     p {
       padding:0 15px;
+
+    
     }
   
   }
@@ -19,11 +44,27 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone{
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone{
+        width: 90%;
+       
+      }
+    }
+
+    .sky, .launch{
+      @media @phone{
+        display: none;
+      }
     }
   }
 
@@ -46,11 +87,29 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      flex-direction: column-reverse;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 5%;
+     
+    }
+
+
     .walk-text {
       width: 50%;
 
+      @media @phone{
+        width: 100%;
+        }
+       
+      }
+
       h3 {
         margin-bottom: 10px;
+
+      
       }
 
       p {
@@ -58,12 +117,25 @@
       }
 
       .btn {
+        .custom-btn();
+
+        @media @phone{
+          width: 100%;
+          height: 80px;
+          
+        }
+
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 100%;
+        margin-bottom: 5%;
+      }
       
       img {
         width: 100%;
@@ -72,4 +144,66 @@
       }
     }
   }
-}// home
+
+.subscribe{
+  border-top: 1px solid @main-border-color;
+  text-align: center;
+  padding: 10% 0;
+  h2{
+    margin-bottom: 10%;
+    
+  }
+
+  form{
+    display: flex;
+    margin-bottom: 10%;
+    justify-content: space-between;
+    align-items: baseline;
+   
+    @media @phone{
+      flex-direction: column;
+      justify-content: center;
+     margin-left: 15%;
+    }
+    
+    
+    input{
+      height: 30px;
+      width: 30%;
+
+      @media @phone{
+        width: 80%;
+       
+      }
+      
+    }
+
+    label{
+      color: @nav-font;
+        margin-left: 3%;
+        font-size: 1.8rem;
+        font-weight: 600;
+
+        @media @phone{
+          padding: 5% 0;
+          
+         
+        }
+     
+    }
+   
+  }
+  .btn {
+    .custom-btn();
+    margin: 0 auto;
+    @media @phone{
+      width: 90%;
+      height: 80px;
+      
+    }
+  }
+
+
+  }
+// home
+

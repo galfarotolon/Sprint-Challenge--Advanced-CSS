@@ -1,1 +1,41 @@
 // Mixins Here
+
+.displayFlexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marginCenter(){
+    max-width:59%; 
+    width: 100%;
+    margin: 0 auto;
+
+    
+}
+
+
+
+
+
+//Parametric Mixin button
+
+.custom-btn(@bgcolor: @header-font-color, @width: 30%, @fontcolor: @white){
+    display: flex;
+     background-color: @bgcolor;
+     cursor: pointer;
+     width: @width;
+     height: 35px;
+     font-size: 2rem;
+     border-radius: 5px;
+     color:@fontcolor; 
+     justify-content: center;
+     align-items: center;
+      
+      &:hover{
+        background-color:@fontcolor;
+        color:@bgcolor;
+        border: 1px solid @header-font-color;
+        transition: 0.5s;
+      }
+ }
